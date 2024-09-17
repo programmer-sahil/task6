@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Computer <span>Store</span></h1>
+            <div class="progress-bar">
+                <div class="step completed">
+                    <div class="step-icon">✔</div>
+                    <div class="step-label">Shopping cart</div>
+                </div>
+                <div class="step current">
+                    <div class="step-icon">2</div>
+                    <div class="step-label">Checkout</div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <div class="step-label">Finish</div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="checkout-details">
+                <div class="billing-details">
+                    <div class="new-container">
+                        <h2>Billing details</h2>
+                        <form>
+                            <label>First & Last name</label>
+                            <input type="text" placeholder="Enter your first and last name" required>
+                            
+                            <label>Email address</label>
+                            <input type="email" placeholder="Enter your email address" required>
+                            
+                            <label>Country</label>
+                            <input type="text" placeholder="Enter your country" required>
+                            
+                            <label>State/Country</label>
+                            <input type="text" placeholder="Enter your state or country" required>
+                            
+                            <label>Zip/Postal code</label>
+                            <input type="text" placeholder="Enter your zip or postal code" required>
+                            
+                            <h3>Payment method</h3>
+                            <div class="payment-method">
+                                <div>
+                                    <div class="payment-container0">
+                                        <input type="radio" id="credit-card" name="payment-method" checked>
+                                        <label for="credit-card">Credit card</label>
+                                        <img src="images/visa.png" alt="Visa">
+                                        <img src="images/mastercard .png" alt="MasterCard">
+                                        <img src="images/express.png" alt="American Express">
+                                        <img src="images/discove.png" alt="Discover">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <label>Card number</label>
+                            <input type="text" placeholder="Enter your card number" required>
+                            
+                            <div class="small">
+                                <label>Expiration date</label>
+                                <input type="text" placeholder="MM/YY" required>
+                                
+                                <label>Security code</label>
+                                <input type="text" placeholder="Enter CVV" required>
+
+                                <label>CVC</label>
+                                <input type="text" placeholder="Enter CVC" required>
+                            </div>
+                       
+                            <div class="payment-container">
+                                <input type="radio" id="paypal" name="payment-method">
+                                <label for="paypal">PayPal</label>
+                                <img src="images/paypall.png" alt="PayPal">
+                            </div>
+                            <button type="submit">Place order</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="order-details">
+                    <div class="new-container1">
+                        <h2>Order your Computer component </h2>
+                        <form id="order-form">
+                            <div class="form-group">
+                                <label for="cpu">CPU:</label>
+                                <select id="cpu" name="cpu">
+                                    <option value="" selected disabled>Select CPU</option>
+                                    <option value="none">None</option>
+                                    <option value="intel-i9">Intel i9</option>
+                                    <option value="amd-ryzen9">AMD Ryzen 9</option>
+                                    <option value="intel-i5">Intel i5</option>
+                                    <option value="intel-i3">Intel i3</option>
+                                    <option value="amd-5">AMD Ryzen 5</option>
+                                </select>
+                                <div class="priceper">
+                                    <span>Price = $0</span><br>
+                                    <span>Discount = 0%</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="gpu">GPU:</label>
+                                <select id="gpu" name="gpu">
+                                    <option value="" selected disabled>Select GPU</option>
+                                    <option value="none">None</option>
+                                    <option value="nvidia-rtx3080">NVIDIA RTX 3080</option>
+                                    <option value="amd-rx6800">AMD RX 6800</option>
+                                    <option value="geforce-gtx1660ti">GeForce GTX 1660 Ti</option>
+                 z                   <option value="geforce-rtx3080">GeForce RTX 3080</option>
+                                </select>
+                                <div class="priceper">
+                                    <span>Price = $0</span><br>
+                                    <span>Discount = 0%</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ram">RAM:</label>
+                                <select id="ram" name="ram">
+                                    <option value="" selected disabled>Select RAM</option>
+                                    <option value="none">None</option>
+                                    <option value="corsair-vengeance-lpx">Corsair Vengeance LPX 16GB (2 x 8GB) DDR4 3200MHz</option>
+                                    <option value="gskill-ripjaws-v">G.Skill Ripjaws V 32GB (2 x 16GB) DDR4 3600MHz</option>
+                                    <option value="crucial-ballistix-sport">Crucial Ballistix Sport 8GB (2 x 4GB) DDR3 1600MHz</option>
+                                    <option value="corsair-dominator-platinum-rgb">Corsair Dominator Platinum RGB 32GB (2 x 16GB) DDR5 5200MHz</option>
+                                    <option value="gskill-trident-z5-rgb">G.Skill Trident Z5 RGB 32GB (2 x 16GB) DDR5 6000MHz</option>
+                                </select>
+                                <div class="priceper">
+                                    <span>Price = $0</span><br>
+                                    <span>Discount = 0%</span>
+                                </div>
+                                <div class="new-container2">
+                                    <div class="price">
+                                      <p>Total = $0</p>
+                                      <p>Shipping cost = $20</p>
+                                      <p>Sub Total = $0 + $20 = $20</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Your order has been placed. Thank you for shopping with us! Please visit again.</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
